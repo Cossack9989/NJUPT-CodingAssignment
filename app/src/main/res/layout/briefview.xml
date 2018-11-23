@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hotdog">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击热狗\n骚扰客服"
+        android:textSize="24sp"
+        android:id="@+id/sbtn"
+        android:fontFamily="casual"
+        android:background="@null"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick"/>
+</RelativeLayout>

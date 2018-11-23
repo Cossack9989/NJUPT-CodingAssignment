@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape5">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kindText"
+        android:hint="kind"
+        android:fontFamily="casual"
+        android:selectAllOnFocus="true"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/numText"
+        android:layout_alignEnd="@+id/numText"
+        android:background="@drawable/shape2"/>
+
+    <EditText
+        android:id="@+id/numText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kindText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape2"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="num"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numText"
+        android:layout_alignStart="@+id/numText"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/shape2"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="price"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceText"
+        android:layout_alignStart="@+id/priceText"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/shape3"
+        android:onClick="onClick"
+        android:text="IN"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceText"
+        android:layout_alignEnd="@+id/priceText"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/shape3"
+        android:onClick="onClick"
+        android:text="OUT"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/backinblack"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/shape4"
+        android:text="With\ndraw"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/addkind"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignBottom="@+id/backinblack"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/shape4"
+        android:text="New\nkind"
+        android:textSize="20sp" />
+
+</RelativeLayout>

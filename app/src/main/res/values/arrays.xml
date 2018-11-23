@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_choice">
+        <item>BY KINDS</item>
+        <item>BY NUMBER</item>
+        <item>BY TIME</item>
+    </string-array>
+    <string-array name="query_choice">
+        <item>BY KINDS</item>
+        <item>BY SERIAL</item>
+        <item>BY IO</item>
+    </string-array>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98f5ff">
+
+    <TextView
+        android:id="@+id/sbt"
+        android:layout_width="129dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape2"
+        android:text="TIME Sort"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/sbk"
+        android:layout_width="129dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape2"
+        android:text="KIND Sort"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/sbs"
+        android:layout_width="129dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="SUM Sort"
+        android:background="@drawable/shape2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/show"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <EditText
+        android:id="@+id/qbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sbt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/sbk"
+        android:inputType="numberDecimal"
+        android:background="@drawable/shape6"/>
+
+    <Button
+        android:id="@+id/qbsB"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignBottom="@+id/qbs"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@+id/qbs"
+        android:text="QUERY BY SERIAL"
+        android:background="@drawable/shape4"/>
+
+    <EditText
+        android:id="@+id/qbk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qbsB"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/qbsB"
+        android:background="@drawable/shape6"
+        />
+
+    <Button
+        android:id="@+id/qbkB"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/qbsB"
+        android:layout_alignBottom="@+id/qbk"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/qbs"
+        android:text="QUERY BY KIND"
+        android:background="@drawable/shape4"/>
+
+    <EditText
+        android:id="@+id/qbi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qbk"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/shape6"
+        android:layout_toStartOf="@+id/qbkB" />
+
+    <Button
+        android:id="@+id/qbiB"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/qbkB"
+        android:layout_alignBottom="@+id/qbi"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/qbi"
+        android:text="QUERY BY IO"
+        android:background="@drawable/shape4"/>
+
+</RelativeLayout>
